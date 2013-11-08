@@ -1,0 +1,74 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "42cdac46df0ea1d696905e251bc55b6a",
+    "packages": [
+        {
+            "name": "lw/typo3cms-installers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lightwerk/typo3cms-installers.git",
+                "reference": "v1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lightwerk/typo3cms-installers/zipball/v1.0.0",
+                "reference": "v1.0.0",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Lw\\TYPO3CMSInstallers\\TYPO3CMSInstallerPlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Felix Oertel",
+                    "email": "fo@lightwerk.com",
+                    "homepage": "https://github.com/lightwerk"
+                }
+            ],
+            "description": "A TYPO3 CMS Composer installer",
+            "homepage": "https://github.com/lightwerk/typo3cms-installers",
+            "keywords": [
+                "cms",
+                "installer",
+                "typo3"
+            ],
+            "support": {
+                "source": "https://github.com/lightwerk/typo3cms-installers/tree/v1.0.0",
+                "issues": "https://github.com/lightwerk/typo3cms-installers/issues"
+            },
+            "time": "2013-10-02 08:22:13"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "lw/typo3cms-installers": 20
+    },
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": [
+
+    ]
+}

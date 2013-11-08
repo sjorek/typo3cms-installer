@@ -1,0 +1,40 @@
+{
+	"autoload" : {
+		"psr-0" : {
+			"Sj" : "src"
+		}
+	},
+	"name" : "sj/typo3cms-installers",
+	"type" : "composer-plugin",
+	"license" : "GPL-3.0+",
+	"require" : {
+		"php" : ">=5.4",
+		"composer-plugin-api" : "1.0.0",
+		"lw/typo3cms-installers" : "@dev"
+	},
+	"extra" : {
+		"class" : "Sj\\TYPO3CMSInstallers\\TYPO3CMSInstallerPlugin"
+	},
+	"repositories" : [{
+			"type" : "composer",
+			"url" : "http://composer.lightwerk.com/"
+		}, {
+			"type" : "package",
+			"name" : "typo3/cms",
+			"package" : {
+				"name" : "typo3/cms",
+				"type" : "typo3cms-core",
+				"version" : "master",
+				"dist" : {
+					"url" : "https://git.typo3.org/Packages/TYPO3.CMS.git/snapshot/master.tar.gz",
+					"type" : "tgz"
+				},
+				"source" : {
+					"type" : "git",
+					"url" : "git://git.typo3.org/Packages/TYPO3.CMS",
+					"reference" : "master"
+				}
+			}
+		}
+	]
+}
