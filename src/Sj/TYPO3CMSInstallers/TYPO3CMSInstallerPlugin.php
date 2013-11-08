@@ -1,7 +1,6 @@
 <?php
 namespace Sj\TYPO3CMSInstallers;
 
-use Lw\TYPO3CMSInstallers\TYPO3CMSCoreInstaller;
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
