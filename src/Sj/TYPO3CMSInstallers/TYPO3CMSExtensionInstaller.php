@@ -22,8 +22,7 @@ class TYPO3CMSExtensionInstaller extends \Lw\TYPO3CMSInstallers\TYPO3CMSExtensio
 	 * {@inheritDoc}
 	 */
 	public function getPackageBasePath(PackageInterface $package) {
-		$extensionName = explode('/', $package->getName());
-		return 'public/typo3conf/ext/' . array_pop($extensionName);
+		return 'public/' . parent::getPackageBasePath($package);
 	}
 }
 ?>

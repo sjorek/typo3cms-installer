@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "42cdac46df0ea1d696905e251bc55b6a",
+    "hash": "1d1deda8e89240ab20922ee48a15e87a",
     "packages": [
         {
             "name": "lw/typo3cms-installers",
