@@ -1,6 +1,8 @@
 <?php
-namespace Sj\TYPO3CMSInstallers;
+namespace Sj\Composer\Plugins;
 
+use Sj\Composer\Installers\TYPO3CMSCoreInstaller;
+use Sj\Composer\Installers\TYPO3CMSExtensionInstaller;
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
@@ -19,7 +21,9 @@ class TYPO3CMSInstallerPlugin implements PluginInterface
 		foreach(array('typo3cms-core', 'typo3cms-extension') as $installer) {
 			try {
 				$manager->removeInstaller($manager->getInstaller($installer));
-			} catch (Exception $e) {}
+			} catch (Exception $e) {
+				var_dump($e);
+			}
 		}
 
 		$extensionInstaller = new TYPO3CMSCoreInstaller($io, $composer);

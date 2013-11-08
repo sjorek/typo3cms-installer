@@ -1,5 +1,5 @@
 <?php
-namespace Sj\TYPO3CMSInstallers;
+namespace Sj\Composer\Installers;
 
 use Composer\Composer;
 use Composer\Installer\LibraryInstaller;
@@ -22,6 +22,14 @@ class TYPO3CMSExtensionInstaller extends \Lw\TYPO3CMSInstallers\TYPO3CMSExtensio
 	 * {@inheritDoc}
 	 */
 	public function getPackageBasePath(PackageInterface $package) {
+// 		$identifier = 'typo3/ext-';
+// 		$prefix = substr($package->getPrettyName(), 0, strlen($identifier));
+//         if ($identifier !== $prefix) {
+//             throw new \InvalidArgumentException(
+//                 'Unable to install typo3 extension, as it must'.
+//             	'always have the package name prefix "typo3/ext-…"'
+//             );
+//         }
 		return 'public/' . parent::getPackageBasePath($package);
 	}
 }

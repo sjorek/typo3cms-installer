@@ -13,11 +13,29 @@
 		"lw/typo3cms-installers" : "dev-master"
 	},
 	"extra" : {
-		"class" : "Sj\\TYPO3CMSInstallers\\TYPO3CMSInstallerPlugin"
+		"class" : "Sj\\Composer\\Plugins\\TYPO3CMSInstallerPlugin"
+	},
+	"scripts" : {
+		"post-install-cmd" : [
+			"Sj\\Composer\\Scripts\\TYPO3CMSInstallerScript::dispatchCommand"
+		],
+		"post-update-cmd" : [
+			"Sj\\Composer\\Scripts\\TYPO3CMSInstallerScript::dispatchCommand"
+		],
+		"post-package-install" : [
+			"Sj\\Composer\\Scripts\\TYPO3CMSInstallerScript::dispatchPackage"
+		],
+		"post-package-update" : [
+			"Sj\\Composer\\Scripts\\TYPO3CMSInstallerScript::dispatchPackage"
+		],
+		"post-package-uninstall" : [
+			"Sj\\Composer\\Scripts\\TYPO3CMSInstallerScript::dispatchPackage"
+		]
 	},
 	"repositories" : [{
-			"type" : "composer",
-			"url" : "http://composer.lightwerk.com/"
+			"type" : "git",
+			"url" : "git@github.com:lightwerk/typo3cms-installers.git"
 		}
-	]
+	],
+	"minimum-stability" : "dev"
 }
