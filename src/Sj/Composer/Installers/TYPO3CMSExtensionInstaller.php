@@ -22,14 +22,12 @@ class TYPO3CMSExtensionInstaller extends \Lw\TYPO3CMSInstallers\TYPO3CMSExtensio
 	 * {@inheritDoc}
 	 */
 	public function getPackageBasePath(PackageInterface $package) {
-// 		$identifier = 'typo3/ext-';
-// 		$prefix = substr($package->getPrettyName(), 0, strlen($identifier));
-//         if ($identifier !== $prefix) {
-//             throw new \InvalidArgumentException(
-//                 'Unable to install typo3 extension, as it must'.
-//             	'always have the package name prefix "typo3/ext-…"'
-//             );
-//         }
+		$identifier = 'typo3/ext-';
+		$prefix = substr($package->getName(), 0, strlen($identifier));
+		if ($identifier === $prefix) {
+			$extensionName = substr($package->getName(), strlen($identifier));
+			return 'public/typo3conf/ext/' . $extensionName;
+		}
 		return 'public/' . parent::getPackageBasePath($package);
 	}
 }
