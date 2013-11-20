@@ -25,7 +25,7 @@ class TYPO3CMSInstallerScript {
 	 * @param Event $event
 	 */
 	public static function dispatchCommand(Event $event) {
-		var_dump($event->getName());
+// 		var_dump($event->getName());
 // 		$composer = $event->getComposer();
 	}
 
@@ -42,7 +42,7 @@ class TYPO3CMSInstallerScript {
 	 * @param Event $event
 	 */
 	public static function dispatchPackage(Event $event) {
-		var_dump($event->getName());
+// 		var_dump($event->getName());
 // 		$installedPackage = $event->getOperation()->getPackage();
 	}
 }

@@ -32,4 +32,3 @@ class TYPO3CMSCoreInstaller extends \Lw\TYPO3CMSInstallers\TYPO3CMSCoreInstaller
 	}
 
 }
-?>

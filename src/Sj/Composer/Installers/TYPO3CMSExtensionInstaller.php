@@ -31,4 +31,3 @@ class TYPO3CMSExtensionInstaller extends \Lw\TYPO3CMSInstallers\TYPO3CMSExtensio
 		return 'public/' . parent::getPackageBasePath($package);
 	}
 }
-?>

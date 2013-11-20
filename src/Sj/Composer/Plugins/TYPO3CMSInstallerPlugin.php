@@ -32,4 +32,3 @@ class TYPO3CMSInstallerPlugin implements PluginInterface
 		$manager->addInstaller($extensionInstaller);
 	}
 }
-?>
