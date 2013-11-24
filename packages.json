@@ -12,9 +12,9 @@
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "http://sjorek.github.io/typo3cms-installers/archive/lw-typo3cms-installers-v1.0.0-e099a8.zip",
+                    "url": "http://sjorek.github.io/typo3cms-installer/archive/lw-typo3cms-installers-v1.0.0-e099a8.zip",
                     "reference": "d859b6fff896895f77f0dc2ac94e7b0a609fdcc6",
-                    "shasum": "de2bd3d7297174a407bc9a2c5721a77da35456fb"
+                    "shasum": "f5314c269bfba7fc5a712865d11bc22c4a3c38f2"
                 },
                 "require": {
                     "composer-plugin-api": "1.0.0"
@@ -130,15 +130,15 @@
                 }
             }
         },
-        "sj/typo3cms-installers": {
+        "sj/typo3cms-installer": {
             "dev-master": {
-                "name": "sj/typo3cms-installers",
+                "name": "sj/typo3cms-installer",
                 "version": "dev-master",
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:sjorek/typo3cms-installers.git",
-                    "reference": "72f0c9797da50b4acbd5fa55cc777d0246956f9e"
+                    "url": "git@github.com:sjorek/typo3cms-installer.git",
+                    "reference": "f44c5945ada2fb00e3a2a2c3a11b2941e841bff5"
                 },
                 "require": {
                     "composer-plugin-api": "1.0.0",
@@ -148,7 +148,7 @@
                 "require-dev": {
                     "sj/satis-github-scripts": "dev-master"
                 },
-                "time": "2013-11-24 16:15:25",
+                "time": "2013-11-24 18:00:46",
                 "type": "composer-plugin",
                 "extra": {
                     "class": "Sj\\Composer\\Plugins\\TYPO3CMSInstallerPlugin"
@@ -170,9 +170,9 @@
                     "GPL-3.0+"
                 ],
                 "description": "Yet another TYPO3 CMS Composer installer",
-                "homepage": "http://sjorek.github.io/typo3cms-installers",
+                "homepage": "http://sjorek.github.io/typo3cms-installer",
                 "support": {
-                    "source": "https://github.com/sjorek/typo3cms-installers"
+                    "source": "https://github.com/sjorek/typo3cms-installer"
                 }
             }
         },
