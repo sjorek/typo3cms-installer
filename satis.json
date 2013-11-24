@@ -38,7 +38,7 @@
 	"archive"                                : {
 		"directory"                          : "archive",
 		"format"                             : "zip",
-		"prefix-url"                         : "/typo3cms-installers",
+		"prefix-url"                         : "http://sjorek.github.io/typo3cms-installers",
 		"skip-dev"                           : true
 	}
 }
