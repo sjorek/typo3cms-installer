@@ -14,7 +14,7 @@
                     "type": "zip",
                     "url": "/typo3cms-installers/archive/lw-typo3cms-installers-v1.0.0-e099a8.zip",
                     "reference": "d859b6fff896895f77f0dc2ac94e7b0a609fdcc6",
-                    "shasum": "5d5c48bdba94b1f31b121e95ddc3b61c5404662e"
+                    "shasum": "90d9319b5d9b18348a4cc9f407b5057f875a59a9"
                 },
                 "require": {
                     "composer-plugin-api": "1.0.0"
