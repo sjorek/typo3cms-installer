@@ -29,7 +29,7 @@
 					"reference"              : "master"
 				},
 				"require"                    : {
-					"sj/typo3cms-installers" : "dev-master"
+					"sj/typo3cms-installer" : "dev-master"
 				}
 			}
 		}],
