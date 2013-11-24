@@ -1,44 +1,44 @@
 {
-	"name"                 : "sj/typo3cms-installers",
-	"homepage"             : "http://sjorek.github.io/typo3cms-installers",
-	"output-dir"           : ".git/satis",
-	"repositories"         : [{
-		"type"             : "vcs",
-		"url"              : "git@github.com:sjorek/typo3cms-installers.git"
+	"name"                                   : "sj/typo3cms-installers",
+	"homepage"                               : "http://sjorek.github.io/typo3cms-installers",
+	"output-dir"                             : ".git/satis",
+	"repositories"                           : [{
+		"type"                               : "vcs",
+		"url"                                : "git@github.com:sjorek/typo3cms-installers.git"
 	}, {
-		"type"             : "vcs",
-		"url"              : "git@github.com:lightwerk/typo3cms-installers.git"
+		"type"                               : "vcs",
+		"url"                                : "git@github.com:lightwerk/typo3cms-installers.git"
 	}, {
-		"type"             : "composer",
-		"url"              : "http://sjorek.github.io/satis-github-scripts"
+		"type"                               : "composer",
+		"url"                                : "http://sjorek.github.io/satis-github-scripts"
 	}, {
-			"type" : "package",
-			"name" : "typo3/cms",
-			"package" : {
-				"name" : "typo3/cms",
-				"type" : "typo3cms-core",
-				"version" : "master",
-				"license" : "GPL-2.0+",
-				"dist" : {
-					"url" : "https://git.typo3.org/Packages/TYPO3.CMS.git/snapshot/master.tar.gz",
-					"type" : "tar"
+			"type"                           : "package",
+			"name"                           : "typo3/cms",
+			"package"                        : {
+				"name"                       : "typo3/cms",
+				"type"                       : "typo3cms-core",
+				"version"                    : "master",
+				"license"                    : "GPL-2.0+",
+				"dist"                       : {
+					"url"                    : "https://git.typo3.org/Packages/TYPO3.CMS.git/snapshot/master.tar.gz",
+					"type"                   : "tar"
 				},
-				"source" : {
-					"type" : "git",
-					"url" : "git://git.typo3.org/Packages/TYPO3.CMS",
-					"reference" : "master"
+				"source"                     : {
+					"type"                   : "git",
+					"url"                    : "git://git.typo3.org/Packages/TYPO3.CMS",
+					"reference"              : "master"
 				},
-				"require" : {
+				"require"                    : {
 					"sj/typo3cms-installers" : "dev-master"
 				}
 			}
 		}],
-	"require-all"          : true,
-	"require-dependencies" : true,
-	"archive"              : {
-		"directory"        : "archive",
-		"format"           : "zip",
-		"prefix-url"       : "/typo3cms-installers",
-		"skip-dev"         : true
+	"require-all"                            : true,
+	"require-dependencies"                   : true,
+	"archive"                                : {
+		"directory"                          : "archive",
+		"format"                             : "zip",
+		"prefix-url"                         : "/typo3cms-installers",
+		"skip-dev"                           : true
 	}
 }
