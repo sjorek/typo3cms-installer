@@ -14,7 +14,7 @@
                     "type": "zip",
                     "url": "http://sjorek.github.io/typo3cms-installer/archive/lw-typo3cms-installers-v1.0.0-e099a8.zip",
                     "reference": "d859b6fff896895f77f0dc2ac94e7b0a609fdcc6",
-                    "shasum": "f5314c269bfba7fc5a712865d11bc22c4a3c38f2"
+                    "shasum": "f34909ac2d49ab2da41a7a81f99553ec1527fa1a"
                 },
                 "require": {
                     "composer-plugin-api": "1.0.0"
@@ -138,7 +138,7 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:sjorek/typo3cms-installer.git",
-                    "reference": "f44c5945ada2fb00e3a2a2c3a11b2941e841bff5"
+                    "reference": "bcdc5133084769bcb45afa393ce9a62dffa2ca03"
                 },
                 "require": {
                     "composer-plugin-api": "1.0.0",
@@ -148,7 +148,7 @@
                 "require-dev": {
                     "sj/satis-github-scripts": "dev-master"
                 },
-                "time": "2013-11-24 18:00:46",
+                "time": "2013-11-24 18:09:30",
                 "type": "composer-plugin",
                 "extra": {
                     "class": "Sj\\Composer\\Plugins\\TYPO3CMSInstallerPlugin"
