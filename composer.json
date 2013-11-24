@@ -35,5 +35,9 @@
 			"url" : "http://sjorek.github.io/satis-github-scripts"
 		}
 	],
-	"minimum-stability" : "dev"
+	"minimum-stability" : "dev",
+	"homepage" : "http://sjorek.github.io/typo3cms-installers",
+	"support" : {
+		"source" : "https://github.com/sjorek/typo3cms-installers"
+	}
 }
