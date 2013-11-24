@@ -14,7 +14,7 @@
                     "type": "zip",
                     "url": "/typo3cms-installers/archive/lw-typo3cms-installers-v1.0.0-e099a8.zip",
                     "reference": "d859b6fff896895f77f0dc2ac94e7b0a609fdcc6",
-                    "shasum": "7935495829f0bfa5fb2fe12bae0a9b6b82de5579"
+                    "shasum": "5d5c48bdba94b1f31b121e95ddc3b61c5404662e"
                 },
                 "require": {
                     "composer-plugin-api": "1.0.0"
@@ -174,6 +174,31 @@
                 "support": {
                     "source": "https://github.com/sjorek/typo3cms-installers"
                 }
+            }
+        },
+        "typo3/cms": {
+            "master": {
+                "name": "typo3/cms",
+                "version": "master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git://git.typo3.org/Packages/TYPO3.CMS",
+                    "reference": "master"
+                },
+                "dist": {
+                    "type": "tar",
+                    "url": "https://git.typo3.org/Packages/TYPO3.CMS.git/snapshot/master.tar.gz",
+                    "reference": null,
+                    "shasum": null
+                },
+                "require": {
+                    "sj/typo3cms-installers": "dev-master"
+                },
+                "type": "typo3cms-core",
+                "license": [
+                    "GPL-2.0+"
+                ]
             }
         }
     }
