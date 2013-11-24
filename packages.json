@@ -14,7 +14,7 @@
                     "type": "zip",
                     "url": "http://sjorek.github.io/typo3cms-installer/archive/lw-typo3cms-installers-v1.0.0-e099a8.zip",
                     "reference": "d859b6fff896895f77f0dc2ac94e7b0a609fdcc6",
-                    "shasum": "f34909ac2d49ab2da41a7a81f99553ec1527fa1a"
+                    "shasum": "69c0a45288cbe94f35d8e45c46f2cdda2220cedd"
                 },
                 "require": {
                     "composer-plugin-api": "1.0.0"
@@ -193,7 +193,7 @@
                     "shasum": null
                 },
                 "require": {
-                    "sj/typo3cms-installers": "dev-master"
+                    "sj/typo3cms-installer": "dev-master"
                 },
                 "type": "typo3cms-core",
                 "license": [
