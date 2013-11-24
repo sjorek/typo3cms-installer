@@ -14,7 +14,7 @@
 		"lw/typo3cms-installers" : "dev-master"
 	},
 	"require-dev" : {
-		"sj/satis-github-scripts" : "dev-master"
+		"sj/satis-github-scripts" : ">=0.0.1-alpha"
 	},
 	"extra" : {
 		"class" : "Sj\\Composer\\Plugins\\TYPO3CMSInstallerPlugin"
