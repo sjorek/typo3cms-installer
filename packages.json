@@ -1,5 +1,135 @@
 {
     "packages": {
+        "lw/typo3cms-installers": {
+            "v1.0.0": {
+                "name": "lw/typo3cms-installers",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lightwerk/typo3cms-installers.git",
+                    "reference": "d859b6fff896895f77f0dc2ac94e7b0a609fdcc6"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "/typo3cms-installers/archive/lw-typo3cms-installers-v1.0.0-e099a8.zip",
+                    "reference": "d859b6fff896895f77f0dc2ac94e7b0a609fdcc6",
+                    "shasum": "7935495829f0bfa5fb2fe12bae0a9b6b82de5579"
+                },
+                "require": {
+                    "composer-plugin-api": "1.0.0"
+                },
+                "time": "2013-10-02 06:34:55",
+                "type": "composer-plugin",
+                "extra": {
+                    "class": "Lw\\TYPO3CMSInstallers\\TYPO3CMSInstallerPlugin"
+                },
+                "installation-source": "source",
+                "autoload": {
+                    "psr-0": {
+                        "": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Felix Oertel",
+                        "email": "fo@lightwerk.com",
+                        "homepage": "https://github.com/lightwerk"
+                    }
+                ],
+                "description": "A TYPO3 CMS Composer installer",
+                "homepage": "https://github.com/lightwerk/typo3cms-installers",
+                "keywords": [
+                    "cms",
+                    "installer",
+                    "typo3"
+                ]
+            },
+            "dev-master": {
+                "name": "lw/typo3cms-installers",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lightwerk/typo3cms-installers.git",
+                    "reference": "90892685674f49494bbc1814f553f9e9c0f7ce39"
+                },
+                "require": {
+                    "composer-plugin-api": "1.0.0"
+                },
+                "time": "2013-10-02 06:34:55",
+                "type": "composer-plugin",
+                "extra": {
+                    "class": "Lw\\TYPO3CMSInstallers\\TYPO3CMSInstallerPlugin"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Felix Oertel",
+                        "email": "fo@lightwerk.com",
+                        "homepage": "https://github.com/lightwerk"
+                    }
+                ],
+                "description": "A TYPO3 CMS Composer installer",
+                "homepage": "https://github.com/lightwerk/typo3cms-installers",
+                "keywords": [
+                    "cms",
+                    "installer",
+                    "typo3"
+                ]
+            }
+        },
+        "sj/satis-github-scripts": {
+            "dev-master": {
+                "name": "sj/satis-github-scripts",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:sjorek/satis-github-scripts.git",
+                    "reference": "ad3856d39655f2778d6d7ed7e03b50e454b5d3ab"
+                },
+                "require": {
+                    "composer/satis": "dev-master",
+                    "php": ">=5.4"
+                },
+                "time": "2013-11-24 15:50:48",
+                "bin": [
+                    "bin/satis-github-publisher.sh"
+                ],
+                "type": "library",
+                "autoload": {
+                    "psr-0": {
+                        "Sj": "src"
+                    }
+                },
+                "scripts": {
+                    "post-install-cmd": [
+                        "[ -x vendor/bin/satis ] && bin/satis-github-publisher.sh"
+                    ],
+                    "post-update-cmd": [
+                        "[ -x vendor/bin/satis ] && bin/satis-github-publisher.sh"
+                    ]
+                },
+                "license": [
+                    "BSD-3-Clause-Clear"
+                ],
+                "homepage": "http://sjorek.github.io/satis-github-scripts",
+                "support": {
+                    "source": "https://github.com/sjorek/satis-github-scripts"
+                }
+            }
+        },
         "sj/typo3cms-installers": {
             "dev-master": {
                 "name": "sj/typo3cms-installers",
@@ -8,7 +138,7 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:sjorek/typo3cms-installers.git",
-                    "reference": "b63b2334c7ba455368d9f2ae88335036b3892fac"
+                    "reference": "72f0c9797da50b4acbd5fa55cc777d0246956f9e"
                 },
                 "require": {
                     "composer-plugin-api": "1.0.0",
@@ -18,7 +148,7 @@
                 "require-dev": {
                     "sj/satis-github-scripts": "dev-master"
                 },
-                "time": "2013-11-24 16:07:55",
+                "time": "2013-11-24 16:15:25",
                 "type": "composer-plugin",
                 "extra": {
                     "class": "Sj\\Composer\\Plugins\\TYPO3CMSInstallerPlugin"
