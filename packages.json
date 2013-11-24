@@ -1,0 +1,50 @@
+{
+    "packages": {
+        "sj/typo3cms-installers": {
+            "dev-master": {
+                "name": "sj/typo3cms-installers",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:sjorek/typo3cms-installers.git",
+                    "reference": "b63b2334c7ba455368d9f2ae88335036b3892fac"
+                },
+                "require": {
+                    "composer-plugin-api": "1.0.0",
+                    "lw/typo3cms-installers": "dev-master",
+                    "php": ">=5.4"
+                },
+                "require-dev": {
+                    "sj/satis-github-scripts": "dev-master"
+                },
+                "time": "2013-11-24 16:07:55",
+                "type": "composer-plugin",
+                "extra": {
+                    "class": "Sj\\Composer\\Plugins\\TYPO3CMSInstallerPlugin"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Sj": "src"
+                    }
+                },
+                "scripts": {
+                    "post-install-cmd": [
+                        "[ -x vendor/bin/satis-github-publisher.sh ] && vendor/bin/satis-github-publisher.sh"
+                    ],
+                    "post-update-cmd": [
+                        "[ -x vendor/bin/satis-github-publisher.sh ] && vendor/bin/satis-github-publisher.sh"
+                    ]
+                },
+                "license": [
+                    "GPL-3.0+"
+                ],
+                "description": "Yet another TYPO3 CMS Composer installer",
+                "homepage": "http://sjorek.github.io/typo3cms-installers",
+                "support": {
+                    "source": "https://github.com/sjorek/typo3cms-installers"
+                }
+            }
+        }
+    }
+}
