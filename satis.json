@@ -1,5 +1,5 @@
 {
-	"name"                                   : "sj/typo3cms-installers",
+	"name"                                   : "sj/typo3cms-installer",
 	"homepage"                               : "http://sjorek.github.io/typo3cms-installer",
 	"output-dir"                             : ".git/satis",
 	"repositories"                           : [{
