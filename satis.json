@@ -3,6 +3,9 @@
 	"homepage"                               : "http://sjorek.github.io/typo3cms-installer",
 	"output-dir"                             : ".git/satis",
 	"repositories"                           : [{
+                "type"                               : "vcs",
+                "url"                                : "git@github.com:composer/composer.git"
+        }, {
 		"type"                               : "vcs",
 		"url"                                : "git@github.com:sjorek/typo3cms-installer.git"
 	}, {
