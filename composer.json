@@ -12,29 +12,26 @@
 		"composer-plugin-api" : "1.0.0",
 		"lw/typo3cms-installers" : "dev-master"
 	},
+	"require-dev": {
+		"sj/satis-github-scripts": "dev-master",
+	},
 	"extra" : {
 		"class" : "Sj\\Composer\\Plugins\\TYPO3CMSInstallerPlugin"
 	},
 	"scripts" : {
 		"post-install-cmd" : [
-			"Sj\\Composer\\Scripts\\TYPO3CMSInstallerScript::dispatchCommand"
+			"[-x vendor/bin/satis-github-publisher.sh ] && vendor/bin/satis-github-publisher.sh"
 		],
 		"post-update-cmd" : [
-			"Sj\\Composer\\Scripts\\TYPO3CMSInstallerScript::dispatchCommand"
-		],
-		"post-package-install" : [
-			"Sj\\Composer\\Scripts\\TYPO3CMSInstallerScript::dispatchPackage"
-		],
-		"post-package-update" : [
-			"Sj\\Composer\\Scripts\\TYPO3CMSInstallerScript::dispatchPackage"
-		],
-		"post-package-uninstall" : [
-			"Sj\\Composer\\Scripts\\TYPO3CMSInstallerScript::dispatchPackage"
+			"[-x vendor/bin/satis-github-publisher.sh ] && vendor/bin/satis-github-publisher.sh"
 		]
 	},
 	"repositories" : [{
 			"type" : "git",
 			"url" : "git@github.com:lightwerk/typo3cms-installers.git"
+		}, {
+			"type": "composer",
+			"url": "http://sjorek.github.io/satis-github-scripts"
 		}
 	],
 	"minimum-stability" : "dev"
