@@ -4,7 +4,7 @@
 			"Sj" : "src"
 		}
 	},
-	"name" : "sj/typo3cms-installers",
+	"name" : "sj/typo3cms-installer",
 	"description" : "Yet another TYPO3 CMS Composer installer",
 	"type" : "composer-plugin",
 	"license" : "GPL-3.0+",
@@ -29,12 +29,12 @@
 	},
 	"repositories" : [{
 			"type" : "composer",
-			"url" : "http://sjorek.github.io/typo3cms-installers"
+			"url" : "http://sjorek.github.io/typo3cms-installer"
 		}
 	],
 	"minimum-stability" : "dev",
-	"homepage" : "http://sjorek.github.io/typo3cms-installers",
+	"homepage" : "http://sjorek.github.io/typo3cms-installer",
 	"support" : {
-		"source" : "https://github.com/sjorek/typo3cms-installers"
+		"source" : "https://github.com/sjorek/typo3cms-installer"
 	}
 }
