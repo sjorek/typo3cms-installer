@@ -5,6 +5,12 @@
 	"repositories"         : [{
 		"type"             : "vcs",
 		"url"              : "git@github.com:sjorek/typo3cms-installers.git"
+	}, {
+		"type"             : "vcs",
+		"url"              : "git@github.com:lightwerk/typo3cms-installers.git"
+	}, {
+		"type"             : "composer",
+		"url"              : "http://sjorek.github.io/satis-github-scripts"
 	}],
 	"require-all"          : true,
 	"require-dependencies" : true,
