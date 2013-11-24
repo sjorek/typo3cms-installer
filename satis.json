@@ -1,0 +1,17 @@
+{
+	"name"                 : "sj/typo3cms-installers",
+	"homepage"             : "http://sjorek.github.io/typo3cms-installers",
+	"output-dir"           : ".git/satis",
+	"repositories"         : [{
+		"type"             : "vcs",
+		"url"              : "git@github.com:sjorek/typo3cms-installers.git"
+	}],
+	"require-all"          : true,
+	"require-dependencies" : true,
+	"archive"              : {
+		"directory"        : "archive",
+		"format"           : "zip",
+		"prefix-url"       : "/typo3cms-installers",
+		"skip-dev"         : true
+	}
+}
