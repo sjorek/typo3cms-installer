@@ -1,5 +1,537 @@
 {
     "packages": {
+        "composer/composer": {
+            "1.0.0-alpha1": {
+                "name": "composer/composer",
+                "version": "1.0.0-alpha1",
+                "version_normalized": "1.0.0.0-alpha1",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:composer/composer.git",
+                    "reference": "fd9fb49cdd80692dc3ba3709275426cea35b1471"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "http://sjorek.github.io/typo3cms-installer/archive/composer-composer-1.0.0-alpha1-ae31c5.zip",
+                    "reference": "fd9fb49cdd80692dc3ba3709275426cea35b1471",
+                    "shasum": "bffc8b995ccc69f803c02ec7301c1f4cf8cec488"
+                },
+                "require": {
+                    "php": ">=5.3.0",
+                    "symfony/console": "2.1.*",
+                    "symfony/finder": "2.1.*",
+                    "symfony/process": "2.1.*"
+                },
+                "time": "2012-03-01 18:53:20",
+                "bin": [
+                    "bin/composer"
+                ],
+                "type": "library",
+                "installation-source": "source",
+                "autoload": {
+                    "psr-0": {
+                        "Composer": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Nils Adermann",
+                        "email": "naderman@naderman.de",
+                        "homepage": "http://www.naderman.de"
+                    },
+                    {
+                        "name": "Jordi Boggiano",
+                        "email": "j.boggiano@seld.be",
+                        "homepage": "http://seld.be"
+                    }
+                ],
+                "description": "Package Manager",
+                "homepage": "http://getcomposer.org/",
+                "keywords": [
+                    "autoload",
+                    "dependency",
+                    "package"
+                ]
+            },
+            "1.0.0-alpha2": {
+                "name": "composer/composer",
+                "version": "1.0.0-alpha2",
+                "version_normalized": "1.0.0.0-alpha2",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:composer/composer.git",
+                    "reference": "a2a060752be8cb69b6992ad2df982b512b1bc432"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "http://sjorek.github.io/typo3cms-installer/archive/composer-composer-1.0.0-alpha2-cbfdf1.zip",
+                    "reference": "a2a060752be8cb69b6992ad2df982b512b1bc432",
+                    "shasum": "966667532c2f62fea10457d599e7e0241b9779b6"
+                },
+                "require": {
+                    "justinrainbow/json-schema": "1.1.*",
+                    "php": ">=5.3.2",
+                    "seld/jsonlint": "1.*",
+                    "symfony/console": "2.1.*",
+                    "symfony/finder": "2.1.*",
+                    "symfony/process": "2.1.*"
+                },
+                "time": "2012-04-03 17:11:28",
+                "bin": [
+                    "bin/composer"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "1.0-dev"
+                    }
+                },
+                "installation-source": "source",
+                "autoload": {
+                    "psr-0": {
+                        "Composer": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Nils Adermann",
+                        "email": "naderman@naderman.de",
+                        "homepage": "http://www.naderman.de"
+                    },
+                    {
+                        "name": "Jordi Boggiano",
+                        "email": "j.boggiano@seld.be",
+                        "homepage": "http://seld.be"
+                    }
+                ],
+                "description": "Package Manager",
+                "homepage": "http://getcomposer.org/",
+                "keywords": [
+                    "autoload",
+                    "dependency",
+                    "package"
+                ]
+            },
+            "1.0.0-alpha3": {
+                "name": "composer/composer",
+                "version": "1.0.0-alpha3",
+                "version_normalized": "1.0.0.0-alpha3",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:composer/composer.git",
+                    "reference": "b28b76f34b94cf116b8af5dcc8585074d4f02ffc"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "http://sjorek.github.io/typo3cms-installer/archive/composer-composer-1.0.0-alpha3-66c944.zip",
+                    "reference": "b28b76f34b94cf116b8af5dcc8585074d4f02ffc",
+                    "shasum": "c147037015d982983434e25c07932cdee59f973e"
+                },
+                "require": {
+                    "justinrainbow/json-schema": "1.1.*",
+                    "php": ">=5.3.2",
+                    "seld/jsonlint": "1.*",
+                    "symfony/console": "2.1.*",
+                    "symfony/finder": "2.1.*",
+                    "symfony/process": "2.1.*"
+                },
+                "suggest": {
+                    "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic"
+                },
+                "time": "2012-05-13 09:39:40",
+                "bin": [
+                    "bin/composer"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "1.0-dev"
+                    }
+                },
+                "installation-source": "source",
+                "autoload": {
+                    "psr-0": {
+                        "Composer": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Nils Adermann",
+                        "email": "naderman@naderman.de",
+                        "homepage": "http://www.naderman.de"
+                    },
+                    {
+                        "name": "Jordi Boggiano",
+                        "email": "j.boggiano@seld.be",
+                        "homepage": "http://seld.be"
+                    }
+                ],
+                "description": "Package Manager",
+                "homepage": "http://getcomposer.org/",
+                "keywords": [
+                    "autoload",
+                    "dependency",
+                    "package"
+                ]
+            },
+            "1.0.0-alpha4": {
+                "name": "composer/composer",
+                "version": "1.0.0-alpha4",
+                "version_normalized": "1.0.0.0-alpha4",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:composer/composer.git",
+                    "reference": "2880cb628f1fd3ee0817419b2fc27fff6a46968f"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "http://sjorek.github.io/typo3cms-installer/archive/composer-composer-1.0.0-alpha4-4a50c1.zip",
+                    "reference": "2880cb628f1fd3ee0817419b2fc27fff6a46968f",
+                    "shasum": "35680c35fda02d3ec21bff78c0db87ecd0802603"
+                },
+                "require": {
+                    "justinrainbow/json-schema": "1.1.*",
+                    "php": ">=5.3.2",
+                    "seld/jsonlint": "1.*",
+                    "symfony/console": "2.1.*",
+                    "symfony/finder": "2.1.*",
+                    "symfony/process": "2.1.*"
+                },
+                "suggest": {
+                    "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic"
+                },
+                "time": "2012-07-04 13:13:14",
+                "bin": [
+                    "bin/composer"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "1.0-dev"
+                    }
+                },
+                "installation-source": "source",
+                "autoload": {
+                    "psr-0": {
+                        "Composer": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Nils Adermann",
+                        "email": "naderman@naderman.de",
+                        "homepage": "http://www.naderman.de"
+                    },
+                    {
+                        "name": "Jordi Boggiano",
+                        "email": "j.boggiano@seld.be",
+                        "homepage": "http://seld.be"
+                    }
+                ],
+                "description": "Package Manager",
+                "homepage": "http://getcomposer.org/",
+                "keywords": [
+                    "autoload",
+                    "dependency",
+                    "package"
+                ],
+                "support": {
+                    "irc": "irc://irc.freenode.org/composer",
+                    "issues": "https://github.com/composer/composer/issues"
+                }
+            },
+            "1.0.0-alpha5": {
+                "name": "composer/composer",
+                "version": "1.0.0-alpha5",
+                "version_normalized": "1.0.0.0-alpha5",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:composer/composer.git",
+                    "reference": "d2ca1a4ef6d728a4ae8eb0b4ac5c37439d85fadb"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "http://sjorek.github.io/typo3cms-installer/archive/composer-composer-1.0.0-alpha5-a92f7b.zip",
+                    "reference": "d2ca1a4ef6d728a4ae8eb0b4ac5c37439d85fadb",
+                    "shasum": "d1138e80299b64e664ef98bd573e2875e299c3d7"
+                },
+                "require": {
+                    "justinrainbow/json-schema": "1.1.*",
+                    "php": ">=5.3.2",
+                    "seld/jsonlint": "1.*",
+                    "symfony/console": "2.1.*@RC",
+                    "symfony/finder": "2.1.*@RC",
+                    "symfony/process": "2.1.*@RC"
+                },
+                "suggest": {
+                    "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
+                    "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic"
+                },
+                "time": "2012-08-18 15:19:24",
+                "bin": [
+                    "bin/composer"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "1.0-dev"
+                    }
+                },
+                "installation-source": "source",
+                "autoload": {
+                    "psr-0": {
+                        "Composer": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Nils Adermann",
+                        "email": "naderman@naderman.de",
+                        "homepage": "http://www.naderman.de"
+                    },
+                    {
+                        "name": "Jordi Boggiano",
+                        "email": "j.boggiano@seld.be",
+                        "homepage": "http://seld.be"
+                    }
+                ],
+                "description": "Package Manager",
+                "homepage": "http://getcomposer.org/",
+                "keywords": [
+                    "autoload",
+                    "dependency",
+                    "package"
+                ],
+                "support": {
+                    "irc": "irc://irc.freenode.org/composer",
+                    "issues": "https://github.com/composer/composer/issues"
+                }
+            },
+            "1.0.0-alpha6": {
+                "name": "composer/composer",
+                "version": "1.0.0-alpha6",
+                "version_normalized": "1.0.0.0-alpha6",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:composer/composer.git",
+                    "reference": "0c8158f47d7dda89226d4e816fee1fb9ac6c1204"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "http://sjorek.github.io/typo3cms-installer/archive/composer-composer-1.0.0-alpha6-ce9a0f.zip",
+                    "reference": "0c8158f47d7dda89226d4e816fee1fb9ac6c1204",
+                    "shasum": "29a61053711473edb294fb90517df522fb0048c0"
+                },
+                "require": {
+                    "justinrainbow/json-schema": "1.1.*",
+                    "php": ">=5.3.2",
+                    "seld/jsonlint": "1.*",
+                    "symfony/console": "~2.1@dev",
+                    "symfony/finder": "~2.1",
+                    "symfony/process": "~2.1@dev"
+                },
+                "suggest": {
+                    "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
+                    "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic"
+                },
+                "time": "2012-10-23 08:54:25",
+                "bin": [
+                    "bin/composer"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "1.0-dev"
+                    }
+                },
+                "installation-source": "source",
+                "autoload": {
+                    "psr-0": {
+                        "Composer": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Nils Adermann",
+                        "email": "naderman@naderman.de",
+                        "homepage": "http://www.naderman.de"
+                    },
+                    {
+                        "name": "Jordi Boggiano",
+                        "email": "j.boggiano@seld.be",
+                        "homepage": "http://seld.be"
+                    }
+                ],
+                "description": "Package Manager",
+                "homepage": "http://getcomposer.org/",
+                "keywords": [
+                    "autoload",
+                    "dependency",
+                    "package"
+                ],
+                "support": {
+                    "irc": "irc://irc.freenode.org/composer",
+                    "issues": "https://github.com/composer/composer/issues"
+                }
+            },
+            "1.0.0-alpha7": {
+                "name": "composer/composer",
+                "version": "1.0.0-alpha7",
+                "version_normalized": "1.0.0.0-alpha7",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:composer/composer.git",
+                    "reference": "3e6afd8975b6ff6eb3045ba00e532d6c0e302fe6"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "http://sjorek.github.io/typo3cms-installer/archive/composer-composer-1.0.0-alpha7-1bff4a.zip",
+                    "reference": "3e6afd8975b6ff6eb3045ba00e532d6c0e302fe6",
+                    "shasum": "f262891654e480138133faebe3c41e217681b02f"
+                },
+                "require": {
+                    "justinrainbow/json-schema": "1.1.*",
+                    "php": ">=5.3.2",
+                    "seld/jsonlint": "1.*",
+                    "symfony/console": "~2.3@dev",
+                    "symfony/finder": "~2.1",
+                    "symfony/process": "~2.1@dev"
+                },
+                "require-dev": {
+                    "phpunit/phpunit": "~3.7.10"
+                },
+                "suggest": {
+                    "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
+                    "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic"
+                },
+                "time": "2013-05-04 09:15:22",
+                "bin": [
+                    "bin/composer"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "1.0-dev"
+                    }
+                },
+                "installation-source": "source",
+                "autoload": {
+                    "psr-0": {
+                        "Composer": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Nils Adermann",
+                        "email": "naderman@naderman.de",
+                        "homepage": "http://www.naderman.de"
+                    },
+                    {
+                        "name": "Jordi Boggiano",
+                        "email": "j.boggiano@seld.be",
+                        "homepage": "http://seld.be"
+                    }
+                ],
+                "description": "Dependency Manager",
+                "homepage": "http://getcomposer.org/",
+                "keywords": [
+                    "autoload",
+                    "dependency",
+                    "package"
+                ],
+                "support": {
+                    "irc": "irc://irc.freenode.org/composer",
+                    "issues": "https://github.com/composer/composer/issues"
+                }
+            },
+            "dev-master": {
+                "name": "composer/composer",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:composer/composer.git",
+                    "reference": "e126c925258e6920433b9c57d97042025754dff1"
+                },
+                "require": {
+                    "justinrainbow/json-schema": "1.1.*",
+                    "php": ">=5.3.2",
+                    "seld/jsonlint": "1.*",
+                    "symfony/console": "~2.3",
+                    "symfony/finder": "~2.2",
+                    "symfony/process": "~2.1@dev"
+                },
+                "require-dev": {
+                    "phpunit/phpunit": "~3.7.10"
+                },
+                "suggest": {
+                    "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
+                    "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic"
+                },
+                "time": "2013-11-22 15:17:02",
+                "bin": [
+                    "bin/composer"
+                ],
+                "type": "library",
+                "extra": {
+                    "branch-alias": {
+                        "dev-master": "1.0-dev"
+                    }
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Composer": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Nils Adermann",
+                        "email": "naderman@naderman.de",
+                        "homepage": "http://www.naderman.de"
+                    },
+                    {
+                        "name": "Jordi Boggiano",
+                        "email": "j.boggiano@seld.be",
+                        "homepage": "http://seld.be"
+                    }
+                ],
+                "description": "Dependency Manager",
+                "homepage": "http://getcomposer.org/",
+                "keywords": [
+                    "autoload",
+                    "dependency",
+                    "package"
+                ],
+                "support": {
+                    "irc": "irc://irc.freenode.org/composer",
+                    "issues": "https://github.com/composer/composer/issues"
+                }
+            }
+        },
         "lw/typo3cms-installers": {
             "v1.0.0": {
                 "name": "lw/typo3cms-installers",
@@ -14,7 +546,7 @@
                     "type": "zip",
                     "url": "http://sjorek.github.io/typo3cms-installer/archive/lw-typo3cms-installers-v1.0.0-e099a8.zip",
                     "reference": "d859b6fff896895f77f0dc2ac94e7b0a609fdcc6",
-                    "shasum": "69c0a45288cbe94f35d8e45c46f2cdda2220cedd"
+                    "shasum": "ca962016d86916480740d9dd270515594190950f"
                 },
                 "require": {
                     "composer-plugin-api": "1.0.0"
