@@ -14,7 +14,7 @@
                     "type": "zip",
                     "url": "http://sjorek.github.io/typo3cms-installer/archive/lw-typo3cms-installers-v1.0.0-e099a8.zip",
                     "reference": "d859b6fff896895f77f0dc2ac94e7b0a609fdcc6",
-                    "shasum": "352135035d89193ac010432c71738577564ed721"
+                    "shasum": "85d7334cdd615950db30e6dc741baf82254c571e"
                 },
                 "require": {
                     "composer-plugin-api": "1.0.0"
@@ -90,6 +90,52 @@
             }
         },
         "sj/satis-github-scripts": {
+            "v0.0.1-alpha": {
+                "name": "sj/satis-github-scripts",
+                "version": "v0.0.1-alpha",
+                "version_normalized": "0.0.1.0-alpha",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:sjorek/satis-github-scripts.git",
+                    "reference": "6362006ec331deca5d3b152c3ea9bb454c21d7a4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "http://sjorek.github.io/typo3cms-installer/archive/sj-satis-github-scripts-6362006ec331deca5d3b152c3ea9bb454c21d7a4-zip-277434.zip",
+                    "reference": "6362006ec331deca5d3b152c3ea9bb454c21d7a4",
+                    "shasum": "4da5403d16b57cb94f61d9cc18c741f9ff519d1c"
+                },
+                "require": {
+                    "composer/satis": "dev-master",
+                    "php": ">=5.4"
+                },
+                "time": "2013-11-24 17:35:39",
+                "bin": [
+                    "bin/satis-github-publisher.sh"
+                ],
+                "type": "library",
+                "installation-source": "dist",
+                "autoload": {
+                    "psr-0": {
+                        "Sj": "src"
+                    }
+                },
+                "scripts": {
+                    "post-install-cmd": [
+                        "[ -x vendor/bin/satis ] && bin/satis-github-publisher.sh"
+                    ],
+                    "post-update-cmd": [
+                        "[ -x vendor/bin/satis ] && bin/satis-github-publisher.sh"
+                    ]
+                },
+                "license": [
+                    "BSD-3-Clause-Clear"
+                ],
+                "homepage": "http://sjorek.github.io/satis-github-scripts",
+                "support": {
+                    "source": "https://github.com/sjorek/satis-github-scripts"
+                }
+            },
             "dev-master": {
                 "name": "sj/satis-github-scripts",
                 "version": "dev-master",
@@ -131,6 +177,57 @@
             }
         },
         "sj/typo3cms-installer": {
+            "v0.0.1-alpha": {
+                "name": "sj/typo3cms-installer",
+                "version": "v0.0.1-alpha",
+                "version_normalized": "0.0.1.0-alpha",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:sjorek/typo3cms-installer.git",
+                    "reference": "a03090dded70d6fe90e83d8d9c74ac82f7c101a9"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "http://sjorek.github.io/typo3cms-installer/archive/sj-typo3cms-installer-v0.0.1-alpha-54b55f.zip",
+                    "reference": "a03090dded70d6fe90e83d8d9c74ac82f7c101a9",
+                    "shasum": "84e6436627ce63d1e6c7abe16d00a282eaba26ba"
+                },
+                "require": {
+                    "composer-plugin-api": "1.0.0",
+                    "lw/typo3cms-installers": "dev-master",
+                    "php": ">=5.4"
+                },
+                "require-dev": {
+                    "sj/satis-github-scripts": ">=0.0.1-alpha"
+                },
+                "time": "2013-11-24 21:15:45",
+                "type": "composer-plugin",
+                "extra": {
+                    "class": "Sj\\Composer\\Plugins\\TYPO3CMSInstallerPlugin"
+                },
+                "installation-source": "source",
+                "autoload": {
+                    "psr-0": {
+                        "Sj": "src"
+                    }
+                },
+                "scripts": {
+                    "post-install-cmd": [
+                        "[ -x vendor/bin/satis-github-publisher.sh ] && vendor/bin/satis-github-publisher.sh"
+                    ],
+                    "post-update-cmd": [
+                        "[ -x vendor/bin/satis-github-publisher.sh ] && vendor/bin/satis-github-publisher.sh"
+                    ]
+                },
+                "license": [
+                    "GPL-3.0+"
+                ],
+                "description": "Yet another TYPO3 CMS Composer installer",
+                "homepage": "http://sjorek.github.io/typo3cms-installer",
+                "support": {
+                    "source": "https://github.com/sjorek/typo3cms-installer"
+                }
+            },
             "dev-master": {
                 "name": "sj/typo3cms-installer",
                 "version": "dev-master",
